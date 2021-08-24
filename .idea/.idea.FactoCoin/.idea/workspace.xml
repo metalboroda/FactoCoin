@@ -7,6 +7,32 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameObjects/Factory1Script.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CoinManagerScript.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/ProgressBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/Coins/CoinValue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/ProgressBar/ProgressBarParticles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/ProgressBar/ProgressBarFade.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/ProgressBar/ProgressBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/ProgressBar/ProgressBarScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CoinManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameObjects/Factory1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/ProgressBar/ProgressBar1Script.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUI/ProgressBar/ProgressBar2Script.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CoinManagerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameObjects/Factory1Script.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameObjects/Factory2Script.cs" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1wze3zzBFEPtT6oPbesWXYufGkr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -17,6 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -48,6 +75,11 @@
       <option name="presentableId" value="Default" />
       <updated>1629465655502</updated>
       <workItem from="1629465663075" duration="14000" />
+      <workItem from="1629475415189" duration="6242000" />
+      <workItem from="1629719715641" duration="11060000" />
+      <workItem from="1629750291981" duration="374000" />
+      <workItem from="1629753977167" duration="130000" />
+      <workItem from="1629786317730" duration="16772000" />
     </task>
     <servers />
   </component>
@@ -55,5 +87,19 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="393" y="42" key="RiderGenerateDialog" timestamp="1629730548067">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="393" y="42" key="RiderGenerateDialog/0.0.1366.728@0.0.1366.728" timestamp="1629730548067" />
+    <state x="184" y="8" key="SettingsEditor" timestamp="1629789760099">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1629789760099" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1629792621367">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1629792621367" />
   </component>
 </project>
