@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,7 +15,6 @@ public class CoinManagerScript : MonoBehaviour
 
     private void Awake()
     {
-        // Singleton
         if (Instance == null)
         {
             Instance = this;
@@ -23,13 +23,20 @@ public class CoinManagerScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
 
-        //
+    private void Start()
+    {
+        coin1Value = PlayerPrefs.GetInt("coin1Value");
+        coin2Value = PlayerPrefs.GetInt("coin2Value");
     }
 
     private void Update()
     {
         coin1Text.text = coin1Value.ToString();
         coin2Text.text = coin2Value.ToString();
+
+        PlayerPrefs.SetInt("coin1Value", coin1Value);
+        PlayerPrefs.SetInt("coin2Value", coin2Value);
     }
 }

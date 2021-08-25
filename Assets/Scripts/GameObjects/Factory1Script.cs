@@ -14,10 +14,10 @@ namespace GameObjects
         private bool _progressBar1IsActive;
         public int factory1Coins = 10;
         public Text _button1Text;
+        public GameObject coin1;
 
         private void Awake()
         {
-            // Singleton
             if (Instance == null)
             {
                 Instance = this;
@@ -60,7 +60,7 @@ namespace GameObjects
         {
             if (ProgressBar1Script.Instance.slider.value >= 100)
             {
-                CoinManagerScript.Instance.coin1Value += factory1Coins;
+                Instantiate(coin1);
                 ProgressBar1Script.Instance.slider.value = 0;
             }
         }

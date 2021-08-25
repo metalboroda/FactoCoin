@@ -25,16 +25,30 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CoinManagerScript.cs" t="Include" />
           <e p="GameObjects" t="Include">
             <e p="Factory1Script.cs" t="Include" />
             <e p="Factory2Script.cs" t="Include" />
+            <e p="GameObjectsAnimation" t="Include">
+              <e p="Coin1Movement.cs" t="Include" />
+              <e p="Coin2Movement.cs" t="Include" />
+            </e>
           </e>
           <e p="GameUI" t="Include">
+            <e p="Buttons" t="Include">
+              <e p="ResetButton.cs" t="Include" />
+            </e>
             <e p="ProgressBar" t="Include">
               <e p="ProgressBar1Script.cs" t="Include" />
               <e p="ProgressBar2Script.cs" t="Include" />
             </e>
+            <e p="UIAnimations" t="Include">
+              <e p="Coin1ImageAnimation.cs" t="Include" />
+              <e p="Coin2ImageAnimation.cs" t="Include" />
+              <e p="WarningPanelAnimation.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Managers" t="Include">
+            <e p="CoinManagerScript.cs" t="Include" />
           </e>
         </e>
       </e>

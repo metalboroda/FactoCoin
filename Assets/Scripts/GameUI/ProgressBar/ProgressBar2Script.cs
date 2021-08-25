@@ -16,7 +16,6 @@ namespace GameUI.ProgressBar
 
         private void Awake()
         {
-            // Singleton
             if (Instance == null)
             {
                 Instance = this;

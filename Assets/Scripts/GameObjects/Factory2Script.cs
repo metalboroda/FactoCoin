@@ -1,4 +1,5 @@
 using GameUI.ProgressBar;
+using GameUI.UIAnimations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,10 +16,10 @@ namespace GameObjects
         public int factory2Coins = 25;
         public GameObject factory2StartButton;
         public Text _button2Text;
+        public GameObject coin2;
 
         private void Awake()
         {
-            // Singleton
             if (Instance == null)
             {
                 Instance = this;
@@ -31,7 +32,7 @@ namespace GameObjects
 
         private void Start()
         {
-            factory2StartButton.SetActive(false);
+            factory2StartButton.SetActive(true);
             progressBar2.SetActive(false);
         }
 
@@ -45,11 +46,9 @@ namespace GameObjects
         {
             if (CoinManagerScript.Instance.coin1Value >= 10)
             {
-                factory2StartButton.SetActive(true);
             }
             else
             {
-                factory2StartButton.SetActive(false);
                 _button2Text.text = "START PROGRESS";
                 if (ProgressBar2Script.Instance.slider.value >= 100f)
                 {
@@ -68,6 +67,7 @@ namespace GameObjects
             }
             else
             {
+                WarningPanelAnimation.Instance.WarningTweenMethod();
                 _button2Text.text = "START PROGRESS";
                 progressBar2.SetActive(false);
                 ProgressBar2Script.Instance.slider.value = 0;
@@ -78,7 +78,7 @@ namespace GameObjects
         {
             if (ProgressBar2Script.Instance.slider.value >= 100)
             {
-                CoinManagerScript.Instance.coin2Value += factory2Coins;
+                Instantiate(coin2);
                 ProgressBar2Script.Instance.slider.value = 0;
             }
         }
