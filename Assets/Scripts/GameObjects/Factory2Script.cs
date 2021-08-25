@@ -1,5 +1,6 @@
 using GameUI.ProgressBar;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GameObjects
 {
@@ -10,8 +11,10 @@ namespace GameObjects
 
         // Vars
         public GameObject progressBar2;
-        private bool _progressBar2IsActive;
+
         public int factory2Coins = 25;
+        public GameObject factory2StartButton;
+        public Text _button2Text;
 
         private void Awake()
         {
@@ -19,7 +22,6 @@ namespace GameObjects
             if (Instance == null)
             {
                 Instance = this;
-                // DontDestroyOnLoad(gameObject);
             }
             else
             {
@@ -29,26 +31,45 @@ namespace GameObjects
 
         private void Start()
         {
+            factory2StartButton.SetActive(false);
             progressBar2.SetActive(false);
-            _progressBar2IsActive = false;
         }
 
         private void Update()
         {
+            ButtonActivation();
             AddCoin();
+        }
+
+        private void ButtonActivation()
+        {
+            if (CoinManagerScript.Instance.coin1Value >= 10)
+            {
+                factory2StartButton.SetActive(true);
+            }
+            else
+            {
+                factory2StartButton.SetActive(false);
+                _button2Text.text = "START PROGRESS";
+                if (ProgressBar2Script.Instance.slider.value >= 100f)
+                {
+                    progressBar2.SetActive(false);
+                }
+            }
         }
 
         public void OnClickStartProgress()
         {
-            if (_progressBar2IsActive == false)
+            if (CoinManagerScript.Instance.coin1Value >= 10)
             {
+                _button2Text.text = "STOP PROGRESS";
                 progressBar2.SetActive(true);
-                _progressBar2IsActive = true;
+                CoinManagerScript.Instance.coin1Value -= 10;
             }
             else
             {
+                _button2Text.text = "START PROGRESS";
                 progressBar2.SetActive(false);
-                _progressBar2IsActive = false;
                 ProgressBar2Script.Instance.slider.value = 0;
             }
         }

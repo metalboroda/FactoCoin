@@ -1,5 +1,6 @@
 using GameUI.ProgressBar;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GameObjects
 {
@@ -12,6 +13,7 @@ namespace GameObjects
         public GameObject progressBar1;
         private bool _progressBar1IsActive;
         public int factory1Coins = 10;
+        public Text _button1Text;
 
         private void Awake()
         {
@@ -19,7 +21,6 @@ namespace GameObjects
             if (Instance == null)
             {
                 Instance = this;
-                // DontDestroyOnLoad(gameObject);
             }
             else
             {
@@ -42,11 +43,13 @@ namespace GameObjects
         {
             if (_progressBar1IsActive == false)
             {
+                _button1Text.text = "STOP PROGRESS";
                 progressBar1.SetActive(true);
                 _progressBar1IsActive = true;
             }
             else
             {
+                _button1Text.text = "START PROGRESS";
                 progressBar1.SetActive(false);
                 _progressBar1IsActive = false;
                 ProgressBar1Script.Instance.slider.value = 0;

@@ -20,7 +20,6 @@ namespace GameUI.ProgressBar
             if (Instance == null)
             {
                 Instance = this;
-                // DontDestroyOnLoad(gameObject);
             }
             else
             {
